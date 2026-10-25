@@ -9,7 +9,7 @@ npm install
 npm test
 ```
 
-`npm test` runs the same checks as the autograder. The tests start their own temporary in-memory MongoDB (the first `npm install` downloads it once, about 70 MB), so you do not need a database to run them. Run a single requirement with `npm test -- --test-name-pattern="^R1:"`.
+`npm test` runs the same checks as the autograder. The tests start their own temporary in-memory MongoDB (the first `npm install` downloads it once, about 70 MB), so you do not need a database to run them. Run a single requirement with `node --test --test-name-pattern="^R1:" "test/**/*.test.js"`.
 
 To run `npm start` against your own database, import the data first:
 
